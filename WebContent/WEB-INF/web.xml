@@ -1,12 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
-  <display-name>fj21-agenda</display-name>
-  <welcome-file-list>
-    <welcome-file>index.html</welcome-file>
-    <welcome-file>index.htm</welcome-file>
-    <welcome-file>index.jsp</welcome-file>
-    <welcome-file>default.html</welcome-file>
-    <welcome-file>default.htm</welcome-file>
-    <welcome-file>default.jsp</welcome-file>
-  </welcome-file-list>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+			xmlns="http://xmlns.jcp.org/xml/ns/javaee" 
+			xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" 
+			id="WebApp_ID" 
+			version="3.1"
+			metadata-complete="false">
+			
+<!--O atributo "metadata-complete", marcado como FALSE permite que as classes(Servlets) 
+	com anotacion(@WebServlet) sejam pesquisadas, caso estaja como TRUE as classes con anotacion seram ignoradas.-->
+			
+
+	<display-name>fj21-agenda</display-name>  
+  
+<!-- As tags "<servlet>" e "<servlet-mapping>" estão comentadas porque estou utilizando anotacion para fazer o mapeamento
+	dos servlets -->
+<!-- 	<servlet> -->
+<!-- 		<servlet-name>servletOiMundo</servlet-name> -->
+<!-- 		<servlet-class>br.com.caelum.servlet.OiMundo</servlet-class> -->
+<!-- 	</servlet> -->
+	
+<!-- 	<servlet-mapping> -->
+<!-- 		<servlet-name>servletOiMundo</servlet-name> -->
+<!-- 		<url-pattern>/oi</url-pattern> -->
+<!-- 	</servlet-mapping>   -->
+  
+  	<welcome-file-list>
+	    <welcome-file>index.html</welcome-file>
+	    <welcome-file>index.htm</welcome-file>
+	    <welcome-file>index.jsp</welcome-file>
+	    <welcome-file>default.html</welcome-file>
+	    <welcome-file>default.htm</welcome-file>
+	    <welcome-file>default.jsp</welcome-file>
+  	</welcome-file-list>
+  	
 </web-app>
