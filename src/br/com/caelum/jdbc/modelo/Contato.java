@@ -1,18 +1,21 @@
 package br.com.caelum.jdbc.modelo;
 
+import java.text.SimpleDateFormat;
 import java.util.Calendar;
 
 public class Contato {
-	
+
 	private Long id;
-	
+
 	private String nome;
-	
+
 	private String email;
-	
+
 	private String endereco;
-	
+
 	private Calendar dataNascimento;
+
+	private String dataNascimentoString;
 
 	public Long getId() {
 		return id;
@@ -52,6 +55,16 @@ public class Contato {
 
 	public void setDataNascimento(Calendar dataNascimento) {
 		this.dataNascimento = dataNascimento;
+	}
+
+	public String getDataNascimentoString() {
+
+		if (this.dataNascimento != null) {
+			SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
+			this.dataNascimentoString = sdf.format(this.dataNascimento.getTime());
+		}
+
+		return dataNascimentoString;
 	}
 
 }
