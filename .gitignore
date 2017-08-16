@@ -1,5 +1,6 @@
 /build
 .classpath
+.settings/
 .settings/org.eclipse.jdt.core.prefs
 .settings/org.eclipse.wst.common.project.facet.core.xml
 
