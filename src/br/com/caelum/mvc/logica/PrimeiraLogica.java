@@ -11,7 +11,7 @@ public class PrimeiraLogica implements ILogica {
 		System.out.println("Executando a logica ...");
 		System.out.println("Retornando o nome da página JSP ...");
 		
-		return "primeira_logica.jsp";
+		return "/WEB-INF/jsp/primeira_logica.jsp";
 	}
 
 }

@@ -8,7 +8,7 @@ public class ShowCadastroLogic implements ILogica {
 	@Override
 	public String executa(HttpServletRequest req, HttpServletResponse res) throws Exception {
 
-		return "show_contato.jsp";
+		return "/WEB-INF/jsp/show_contato.jsp";
 	}
 
 }

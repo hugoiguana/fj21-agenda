@@ -23,7 +23,7 @@ public class ShowAlteraContatoLogic implements ILogica {
 		
 		request.setAttribute("contato", contato);
 		
-		return "show_contato.jsp";
+		return "/WEB-INF/jsp/show_contato.jsp";
 	}
 
 }

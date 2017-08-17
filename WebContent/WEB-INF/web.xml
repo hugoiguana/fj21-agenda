@@ -28,18 +28,18 @@
 	<!-- Página default para quando ocorrer um erro -->
 	<error-page>
 		<exception-type>java.lang.Exception</exception-type>
-		<location>/erro.html</location>
+		<location>/WEB-INF/jsp/erro.html</location>
 	</error-page>
 	
 	<!-- Página default para quando uma página não for encontrada -->
 	<error-page>
 		<error-code>404</error-code>
-		<location>/404.html</location>
+		<location>/WEB-INF/jsp/404.html</location>
 	</error-page>
 
 	  
   	<welcome-file-list>
-  		<welcome-file>bemvindo.jsp</welcome-file>
+  		<welcome-file>/WEB-INF/jsp/bemvindo.jsp</welcome-file>
 <!--   		<welcome-file>index.html</welcome-file> -->
 <!-- 	    <welcome-file>index.html</welcome-file> -->
 <!-- 	    <welcome-file>index.htm</welcome-file> -->
