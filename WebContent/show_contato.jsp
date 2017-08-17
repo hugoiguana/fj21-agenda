@@ -17,8 +17,8 @@
 <%@ taglib tagdir="/WEB-INF/tags" prefix="caelum" %>
 
 
-<c:set var="actionAdiciona" value="AdicionaContato" />
-<c:set var="actionEdita" value="EditaContato" />
+<%-- <c:set var="actionAdiciona" value="AdicionaContato" /> --%>
+<%-- <c:set var="actionEdita" value="EditaContato" /> --%>
 <c:set var="tituloAddContato" value="Adiciona contato" />
 <c:set var="tituloAlteraContato" value="Edita contato" />
 
@@ -32,7 +32,8 @@
 	<form action="mvc">
 	
 		<input type="hidden" name="id" value="${contato.id}"/>
-		<input type="hidden" name="logica" value="${empty contato.id ? actionAdiciona : actionEdita}"/>
+		<%--<input type="hidden" name="logica" value="${empty contato.id ? actionAdiciona : actionEdita}"/> --%>
+		<input type="hidden" name="logica" value="${empty contato.id ? 'AdicionaContato' : 'EditaContato'}"/>
 	
 		<c:if test="${not empty contato.id}">
 			Id: <span>${contato.id}</span>
